@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Spotify</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/Style.css">
+ </head> 
+ <body>
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+ 
+           <div class="sidebar__logo">
+               <img src="img/logo.png"/>
+           </div> <!--siderbar__logo-->
+ 
+           <div class="sidebar__menu">
+               <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i> Início</a>
+               <a href="#"><i class="fas fa-search"></i> Buscar</a>
+               <a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+           </div> <!--sidebar__menu-->
+           <div class="sidebar__menu">
+                <p class="sidebar__menu__title">Playlists</p>
+
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__item__componente">
+                        + 
+                    </div> <!--menu__item-->
+                    <span>Criar Playlists</span>
+                    
+                    <div class="sidebar__menu__item">
+                     <img src="img/coracao.jpg" alt="">
+                      
+                     <span>Musicas Curtidas</span>
+                    </div>
+                    
+                </div> <!--sidebar__menu__item-->
+
+            </div> <!--siderbar__menu-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div> <!--siderbar__playlist-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div> <!--siderbar__playlist-->
+
+        </div> <!--siderbar-wraper-->
+     
+    </div> <!--siderbar-->
+
+    <div class="main">
+        <div class="main-wraper">
+
+            <div class="main__row">
+                <div class="main__row__title"><h2>Ah, o Sábado!</h2></div>
+
+                <div class="main__col" data-image="img/Kasino.jpg" data-artist="Kassino" data-song="Can Kasino" data-file="assets/music.mp3">
+                    <img src="img/Kasino.jpg" alt="">
+                    <h3>Can't Get Over</h3>
+                    <p>KASINO</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/Xand.jpg" alt="">
+                    <h3>Não pode se apaixoar</h3>
+                    <p>Dj Ivis, Xand Avião, Mc Danny</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/Periclis.jpg" alt="">
+                    <h3>Até Que Durou</h3>
+                    <p>Péricles</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/Sem-sal.jpg" alt="">
+                    <h3>Marilia Mendonça Sem Sal</h3>
+                    <p>De lane Margareth Abreu</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+            </div><!--main__row-->
+
+            <div class="main__row">
+                <div class="main__row__title"><h2>paradas</h2></div>
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+                <div class="main__col">
+                    <img src="img/top50.jpg" alt="">
+                    <h3>Top 50 - Brasil</h3>
+                    <p>Brasil:Faixas mais tocadas</p>
+                </div><!--main__col-->
+
+            </div><!--main__row-->
+        </div><!--main-wraper-->
+
+    </div><!--main-->
+
+    <div class="playe">
+        <div class="Playe__artist">
+
+        </div>
+        <div class="playe__control">
+            <div class="player__controll__buttons">
+                <a href=""><i class="fas fa-backward"></i></a> 
+                <a style="display: none" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a> 
+                
+
+            </div>
+
+            <div class="playe__controll__progress">
+                <div style="width: 90%;" class="playe__controll__progress2"></div>
+            </div>
+        </div>
+    </div><!--player-->
+    <audio id="audioplaye" src="" style="position: absolute; left: 0; top: 0;z-index: -999; opacity: 0;"control""></audio>
+
+    <script src="js/all.min.js"></script>
+
+    <script>
+
+        var audioplaye = document.getElementById('audioplaye');
+        var load = false;
+
+        document.getElementById('pauseBtn') .addEventListener('clik','#'=>{});
+
+
+
+
+
+    </script>
+ </body>
+ </html>
+
